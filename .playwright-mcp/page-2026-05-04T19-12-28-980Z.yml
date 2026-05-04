@@ -1,0 +1,19 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Gen 0
+      - generic [ref=e8]: Evaluate
+      - generic [ref=e11]: Reflect
+      - generic [ref=e14]: Score Children
+      - generic [ref=e17]: Select
+  - main [ref=e18]:
+    - img [ref=e27]:
+      - generic [ref=e28] [cursor=pointer]:
+        - generic: seed
+        - generic: pending
+  - complementary [ref=e20]:
+    - generic [ref=e22]: "Click Step to run: evaluating population."
+  - contentinfo [ref=e23]:
+    - button "Restart" [active] [ref=e32] [cursor=pointer]
+    - 'button "Step: evaluating population" [ref=e33] [cursor=pointer]'
+    - generic [ref=e26]: 1 candidates

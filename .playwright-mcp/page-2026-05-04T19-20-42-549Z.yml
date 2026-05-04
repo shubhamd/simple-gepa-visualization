@@ -1,0 +1,300 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Gen 1
+      - generic [ref=e8]: ✓Evaluate
+      - generic [ref=e11]: Reflect
+      - generic [ref=e14]: Score Children
+      - generic [ref=e17]: Select
+  - main [ref=e18]:
+    - img [ref=e27]:
+      - generic [ref=e28] [cursor=pointer]:
+        - generic: seed
+        - generic: fb 100% val 0%
+      - generic [ref=e171] [cursor=pointer]:
+        - generic: c1
+        - generic: fb 100% val 0%
+      - generic [ref=e175] [cursor=pointer]:
+        - generic: c2
+        - generic: fb 100% val 0%
+  - complementary [ref=e20]:
+    - generic [ref=e271]:
+      - generic [ref=e272]:
+        - generic [ref=e273]: Eval output
+        - generic [ref=e274]: 15 done
+        - generic [ref=e275]: 🔍 fb = training ✦ val = held-out
+      - generic [ref=e276]:
+        - generic [ref=e277]:
+          - generic [ref=e278]:
+            - generic [ref=e279]: seed
+            - generic [ref=e280]: task 1/5
+            - generic [ref=e281]: 🔍 fb
+          - generic [ref=e282]:
+            - generic [ref=e283]: What is 7 * 6?
+            - generic [ref=e284]: "ANSWER: 42"
+          - generic [ref=e285]:
+            - generic [ref=e286]: ✓ correct
+            - generic [ref=e287]: ✓ fmt
+        - generic [ref=e297]:
+          - generic [ref=e298]:
+            - generic [ref=e299]: seed
+            - generic [ref=e300]: task 2/5
+            - generic [ref=e301]: 🔍 fb
+          - generic [ref=e302]:
+            - generic [ref=e303]: What is 10 / 2 * 3 - 9?
+            - generic [ref=e304]: "1. First, perform the division operation: 10 / 2 = 5"
+            - generic [ref=e305]: "2. Then, multiply the result by 3: 5 * 3 = 15"
+            - generic [ref=e306]: "3. Subtract 9 from the result: 15 - 9 = 6"
+            - generic [ref=e308]: "ANSWER: 6"
+          - generic [ref=e309]:
+            - generic [ref=e310]: ✓ correct
+            - generic [ref=e311]: ✓ fmt
+        - generic [ref=e312]:
+          - generic [ref=e313]:
+            - generic [ref=e314]: seed
+            - generic [ref=e315]: task 3/5
+            - generic [ref=e316]: 🔍 fb
+          - generic [ref=e317]:
+            - generic [ref=e318]: A rectangle has a length that is 3 times its width. If the perimeter is 48, what is the width as a whole number?
+            - generic [ref=e319]: Let's denote the width of the rectangle as 'w'. According to the problem, the length is 3 times the width, so we can denote it as '3w'. The formula for the perimeter of a rectangle is P = 2(L + W), where L is the length and W is the width.
+            - generic [ref=e321]: "Substituting the given values into the formula, we get:"
+            - generic [ref=e322]: 48 = 2(3w + w)
+            - generic [ref=e324]: "Solving this equation step by step:"
+            - generic [ref=e325]: "1. Simplify the equation: 48 = 2(4w)"
+            - generic [ref=e326]: "2. Divide both sides by 2: 24 = 4w"
+            - generic [ref=e327]: "3. Divide both sides by 4 to solve for 'w': w = 6"
+            - generic [ref=e329]: So, the width of the rectangle is 6 units.
+            - generic [ref=e331]: "ANSWER: 6"
+          - generic [ref=e332]:
+            - generic [ref=e333]: ✓ correct
+            - generic [ref=e334]: ✓ fmt
+        - generic [ref=e335]:
+          - generic [ref=e336]:
+            - generic [ref=e337]: seed
+            - generic [ref=e338]: task 4/5
+            - generic [ref=e339]: ✦ val
+          - generic [ref=e340]:
+            - generic [ref=e341]: Mark rows downstream for 30 km, then turns around and returns to his original location. The total trip took 8 hr. If the current flows at 2 km/h, how fast would Mark row in still water? Give the answer as a whole number.
+            - generic [ref=e342]: "The speed of Mark in still water is ANSWER: 36 km/h."
+          - generic [ref=e343]:
+            - generic [ref=e344]: ✗ wrong
+            - generic [ref=e345]: ✗ fmt
+        - generic [ref=e346]:
+          - generic [ref=e347]:
+            - generic [ref=e348]: seed
+            - generic [ref=e349]: task 5/5
+            - generic [ref=e350]: ✦ val
+          - generic [ref=e351]:
+            - generic [ref=e352]: Sally is 20 years older than Joey. The product of their current ages is 175 more than the product of their ages 5 years ago. What is Sally's current age?
+            - generic [ref=e353]: "First, let's denote Sally's current age as S and Joey's current age as J. According to the problem, we know that Sally is 20 years older than Joey, so we can write this relationship as:"
+            - generic [ref=e355]: S = J + 20
+            - generic [ref=e357]: "The product of their current ages is given by S * J, and the product of their ages 5 years ago is (S - 5) * (J - 5). According to the problem, these two products differ by 175, so we can write this relationship as:"
+            - generic [ref=e359]: S * J = (S - 5) * (J - 5) + 175
+            - generic [ref=e361]: "Now we need to solve these equations simultaneously. We can substitute S from the first equation into the second equation:"
+            - generic [ref=e363]: (J + 20) * J = (J + 20 - 5) * (J - 5) + 175
+            - generic [ref=e365]: "Simplifying this gives:"
+            - generic [ref=e367]: J^2 + 20J = J^2 - 35J + 145
+            - generic [ref=e369]: "Rearranging the terms, we get:"
+            - generic [ref=e371]: 55J = 145
+            - generic [ref=e373]: So, J = 145 / 55 = 2.636...
+            - generic [ref=e375]: "However, since ages are typically whole numbers, it's unusual to have a fractional age in this context. So let's round J down to the nearest whole number, which is 2. Then, using the first equation S = J + 20, we get:"
+            - generic [ref=e377]: S = 2 + 20 = 22
+            - generic [ref=e379]: So, Sally's current age is 22.
+            - generic [ref=e381]: "ANSWER: 22"
+          - generic [ref=e382]:
+            - generic [ref=e383]: ✗ wrong
+            - generic [ref=e384]: ✓ fmt
+        - generic [ref=e385]:
+          - generic [ref=e386]:
+            - generic [ref=e387]: seed_child1
+            - generic [ref=e388]: task 1/5
+            - generic [ref=e389]: 🔍 fb
+          - generic [ref=e390]:
+            - generic [ref=e391]: What is 7 * 6?
+            - generic [ref=e392]: PEMDAS/BODMAS does not apply here as there are no operations of higher precedence.
+            - generic [ref=e393]: "Direct multiplication yields: 7 * 6 = <42>."
+          - generic [ref=e394]:
+            - generic [ref=e395]: ✓ correct
+            - generic [ref=e396]: ✗ fmt
+        - generic [ref=e397]:
+          - generic [ref=e398]:
+            - generic [ref=e399]: seed_child1
+            - generic [ref=e400]: task 2/5
+            - generic [ref=e401]: 🔍 fb
+          - generic [ref=e402]:
+            - generic [ref=e403]: What is 10 / 2 * 3 - 9?
+            - generic [ref=e404]: The correct answer is 6.
+          - generic [ref=e405]:
+            - generic [ref=e406]: ✓ correct
+            - generic [ref=e407]: ✗ fmt
+        - generic [ref=e408]:
+          - generic [ref=e409]:
+            - generic [ref=e410]: seed_child1
+            - generic [ref=e411]: task 3/5
+            - generic [ref=e412]: 🔍 fb
+          - generic [ref=e413]:
+            - generic [ref=e414]: A rectangle has a length that is 3 times its width. If the perimeter is 48, what is the width as a whole number?
+            - generic [ref=e415]: 1. Let's denote the width of the rectangle as W and the length as L. According to the problem, L = 3W. The formula for the perimeter P of a rectangle is P = 2L + 2W.
+            - generic [ref=e416]: "2. Substitute L = 3W into the perimeter formula: P = 2(3W) + 2W = 6W + 2W = 8W."
+            - generic [ref=e417]: 3. Given that the perimeter P is 48, we can set up the equation 8W = 48.
+            - generic [ref=e418]: "4. Solving for W, we divide both sides of the equation by 8: W = 48 / 8 = 6."
+            - generic [ref=e419]: 5. Therefore, the width of the rectangle is 6 units.
+          - generic [ref=e420]:
+            - generic [ref=e421]: ✓ correct
+            - generic [ref=e422]: ✗ fmt
+        - generic [ref=e423]:
+          - generic [ref=e424]:
+            - generic [ref=e425]: seed_child1
+            - generic [ref=e426]: task 4/5
+            - generic [ref=e427]: ✦ val
+          - generic [ref=e428]:
+            - generic [ref=e429]: Mark rows downstream for 30 km, then turns around and returns to his original location. The total trip took 8 hr. If the current flows at 2 km/h, how fast would Mark row in still water? Give the answer as a whole number.
+            - generic [ref=e430]: First, we need to determine the speed of Mark's rowing in still water. Let's denote it as x (km/h). The current flows at 2 km/h downstream and against the current upstream. Therefore, the effective speeds are (x + 2) km/h downstream and (x - 2) km/h upstream.
+            - generic [ref=e432]: Mark rows 30 km downstream and then returns to his original location, which means he rows 30 km upstream as well. The total distance is therefore 60 km.
+            - generic [ref=e434]: "The time it takes to row downstream is the distance divided by the effective speed: 30 / (x + 2) hours. The time it takes to row upstream is the distance divided by the effective speed: 30 / (x - 2) hours. The total trip took 8 hours, so we can write the equation:"
+            - generic [ref=e436]: 30 / (x + 2) + 30 / (x - 2) = 8
+            - generic [ref=e438]: "Multiplying through by (x + 2)(x - 2) to clear the denominators gives:"
+            - generic [ref=e440]: 30(x - 2) + 30(x + 2) = 8(x^2 - 4)
+            - generic [ref=e442]: "Expanding and simplifying, we get:"
+            - generic [ref=e444]: 60x - 120 = 8x^2 - 32
+            - generic [ref=e446]: "Rearranging terms, we have:"
+            - generic [ref=e448]: 8x^2 - 60x + 88 = 0
+            - generic [ref=e450]: "Dividing through by 8 gives a quadratic equation in standard form:"
+            - generic [ref=e452]: x^2 - 7.5x + 11 = 0
+            - generic [ref=e454]: "Solving this quadratic equation, we get two possible solutions for x: approximately 3.39 and 4.61. Since speed must be positive, both solutions are valid. However, the problem asks for a whole number answer, so the only valid option is 5 km/h (rounded to the nearest whole number)."
+            - generic [ref=e456]: "Final answer: \\boxed{5}"
+          - generic [ref=e457]:
+            - generic [ref=e458]: ✗ wrong
+            - generic [ref=e459]: ✗ fmt
+        - generic [ref=e460]:
+          - generic [ref=e461]:
+            - generic [ref=e462]: seed_child1
+            - generic [ref=e463]: task 5/5
+            - generic [ref=e464]: ✦ val
+          - generic [ref=e465]:
+            - generic [ref=e466]: Sally is 20 years older than Joey. The product of their current ages is 175 more than the product of their ages 5 years ago. What is Sally's current age?
+            - generic [ref=e467]: "Let's denote Sally's current age as S and Joey's current age as J. According to the problem, we have two equations:"
+            - generic [ref=e469]: 1. S = J + 20 (since Sally is 20 years older than Joey)
+            - generic [ref=e470]: 2. S * J = (S - 5) * (J - 5) + 175 (the product of their current ages is 175 more than the product of their ages 5 years ago)
+            - generic [ref=e472]: "First, let's solve the first equation for J: J = S - 20. Now we substitute this into the second equation:"
+            - generic [ref=e474]: S * (S - 20) = (S - 5) * (S - 25) + 175
+            - generic [ref=e476]: "Expanding and simplifying, we get:"
+            - generic [ref=e478]: S^2 - 20S = S^2 - 30S + 125 + 175
+            - generic [ref=e480]: "Rearranging terms, we have:"
+            - generic [ref=e482]: "-10S = 300"
+            - generic [ref=e484]: "Dividing both sides by -10, we get:"
+            - generic [ref=e486]: S = -30
+            - generic [ref=e488]: However, since age cannot be negative, there must be a mistake in the problem statement or our interpretation of it. Let's recheck the problem and try again.
+          - generic [ref=e489]:
+            - generic [ref=e490]: ✗ wrong
+            - generic [ref=e491]: ✗ fmt
+        - generic [ref=e492]:
+          - generic [ref=e493]:
+            - generic [ref=e494]: seed_child2
+            - generic [ref=e495]: task 1/5
+            - generic [ref=e496]: 🔍 fb
+          - generic [ref=e497]:
+            - generic [ref=e498]: What is 7 * 6?
+            - generic [ref=e499]: "Let's solve this step by step according to the order of operations:"
+            - generic [ref=e501]: 1. We start with the multiplication operation, as it has higher precedence over addition and subtraction in the expression 7 * 6.
+            - generic [ref=e502]: "2. Multiply 7 and 6 together: 7 * 6 = 42"
+            - generic [ref=e504]: "So, the final answer is \\boxed{42}."
+          - generic [ref=e505]:
+            - generic [ref=e506]: ✓ correct
+            - generic [ref=e507]: ✗ fmt
+        - generic [ref=e508]:
+          - generic [ref=e509]:
+            - generic [ref=e510]: seed_child2
+            - generic [ref=e511]: task 2/5
+            - generic [ref=e512]: 🔍 fb
+          - generic [ref=e513]:
+            - generic [ref=e514]: What is 10 / 2 * 3 - 9?
+            - generic [ref=e515]: "Step 1: Perform division and multiplication from left to right as they have the same precedence."
+            - generic [ref=e516]: 10 / 2 = 5
+            - generic [ref=e517]: 5 * 3 = 15
+            - generic [ref=e519]: "Step 2: Perform subtraction."
+            - generic [ref=e520]: 15 - 9 = 6
+            - generic [ref=e522]: "Final answer: \\boxed{6}"
+          - generic [ref=e523]:
+            - generic [ref=e524]: ✓ correct
+            - generic [ref=e525]: ✗ fmt
+        - generic [ref=e526]:
+          - generic [ref=e527]:
+            - generic [ref=e528]: seed_child2
+            - generic [ref=e529]: task 3/5
+            - generic [ref=e530]: 🔍 fb
+          - generic [ref=e531]:
+            - generic [ref=e532]: A rectangle has a length that is 3 times its width. If the perimeter is 48, what is the width as a whole number?
+            - generic [ref=e533]: "Step 1: Let's denote the width of the rectangle as w and the length as l. From the problem, we know that the length l = 3 * width (w)."
+            - generic [ref=e535]: "Step 2: We also know that the perimeter P of a rectangle is given by the formula P = 2 * l + 2 * w. Substituting l from step 1 into this formula gives us P = 2 * (3 * w) + 2 * w."
+            - generic [ref=e537]: "Step 3: Simplifying the equation from step 2 gives us P = 6 * w + 2 * w, which simplifies further to P = 8 * w."
+            - generic [ref=e539]: "Step 4: We are given that the perimeter P is 48, so we can substitute this into our equation to get 48 = 8 * w."
+            - generic [ref=e541]: "Step 5: Solving for w gives us w = 48 / 8 = 6."
+            - generic [ref=e543]: "So, the width of the rectangle as a whole number is \\boxed{6}."
+          - generic [ref=e544]:
+            - generic [ref=e545]: ✓ correct
+            - generic [ref=e546]: ✗ fmt
+        - generic [ref=e547]:
+          - generic [ref=e548]:
+            - generic [ref=e549]: seed_child2
+            - generic [ref=e550]: task 4/5
+            - generic [ref=e551]: ✦ val
+          - generic [ref=e552]:
+            - generic [ref=e553]: Mark rows downstream for 30 km, then turns around and returns to his original location. The total trip took 8 hr. If the current flows at 2 km/h, how fast would Mark row in still water? Give the answer as a whole number.
+            - generic [ref=e554]: "Step 1: Identify and solve for the time taken by Mark to travel downstream and upstream separately. Since Mark rows downstream with the current, he moves faster, and against the current when returning, he moves slower. Let's denote the speed of Mark in still water as x km/h. The total time for both trips is 8 hours, and the distance covered is 30 km each way."
+            - generic [ref=e556]: Downstream speed = (x + 2) km/h
+            - generic [ref=e557]: Upstream speed = (x - 2) km/h
+            - generic [ref=e559]: "Step 2: Set up two equations based on the distances and times for downstream and upstream journeys:"
+            - generic [ref=e561]: Time taken to go downstream = Distance / Downstream speed
+            - generic [ref=e562]: Time taken to return upstream = Distance / Upstream speed
+            - generic [ref=e564]: Total time = Time taken to go downstream + Time taken to return upstream
+            - generic [ref=e566]: 8 hours = 30 km / (x + 2) + 30 km / (x - 2)
+            - generic [ref=e568]: "Step 3: Solve for x by first finding a common denominator and combining the fractions. Then solve the resulting equation:"
+            - generic [ref=e570]: (x - 2)(x + 2) = 30/8 * [(x + 2) + (x - 2)]
+            - generic [ref=e572]: "Expanding and simplifying the equation gives us:"
+            - generic [ref=e574]: x^2 - 4 = 15x/4 - 15/2
+            - generic [ref=e575]: "Multiply both sides by 4 to get rid of the fraction:"
+            - generic [ref=e576]: 4x^2 - 36x + 48 = 0
+            - generic [ref=e577]: "Divide through by 4 to simplify further:"
+            - generic [ref=e578]: x^2 - 9x + 12 = 0
+            - generic [ref=e580]: "Step 4: Factorize or use the quadratic formula to solve for x:"
+            - generic [ref=e582]: (x - 3)(x - 6) = 0
+            - generic [ref=e584]: "This gives us two possible solutions: x = 3 km/h and x = 6 km/h. Since Mark must row at a speed higher than the current flow, we discard the solution x = 3 km/h."
+            - generic [ref=e586]: "Final answer:"
+            - generic [ref=e587]: Mark rows at a speed of 6 km/h in still water.
+            - generic [ref=e589]: "ANSWER: 6"
+          - generic [ref=e590]:
+            - generic [ref=e591]: ✗ wrong
+            - generic [ref=e592]: ✓ fmt
+        - generic [ref=e593]:
+          - generic [ref=e594]:
+            - generic [ref=e595]: seed_child2
+            - generic [ref=e596]: task 5/5
+            - generic [ref=e597]: ✦ val
+          - generic [ref=e598]:
+            - generic [ref=e599]: Sally is 20 years older than Joey. The product of their current ages is 175 more than the product of their ages 5 years ago. What is Sally's current age?
+            - generic [ref=e600]: "Let's denote Joey's current age as J and Sally's current age as S. According to the problem, we have two equations:"
+            - generic [ref=e602]: 1) S = J + 20 (Sally is 20 years older than Joey)
+            - generic [ref=e604]: 2) (J * S) - (J * S) 5 years ago = 175 (The product of their current ages is 175 more than the product of their ages 5 years ago)
+            - generic [ref=e606]: "Let's first solve equation 1 for J:"
+            - generic [ref=e608]: J = S - 20
+            - generic [ref=e610]: "Now, let's substitute J in equation 2 with (S - 20):"
+            - generic [ref=e612]: (S * (S - 20)) - ((S - 20) * (S - 25)) = 175
+            - generic [ref=e614]: "Expanding the expressions inside the parentheses:"
+            - generic [ref=e616]: S^2 - 20S - S^2 + 45S - 20*25 = 175
+            - generic [ref=e618]: "Simplifying:"
+            - generic [ref=e620]: "-20S + 45S - 500 = 175"
+            - generic [ref=e622]: "Combining like terms:"
+            - generic [ref=e624]: 25S = 675
+            - generic [ref=e626]: "Dividing both sides by 25:"
+            - generic [ref=e628]: S = 27
+            - generic [ref=e630]: So, Sally's current age is 27 years.
+            - generic [ref=e632]: "ANSWER: <integer>27"
+          - generic [ref=e633]:
+            - generic [ref=e634]: ✗ wrong
+            - generic [ref=e635]: ✗ fmt
+  - contentinfo [ref=e23]:
+    - button "Restart" [ref=e32] [cursor=pointer]
+    - 'button "Step: reflecting" [ref=e636] [cursor=pointer]'
+    - generic [ref=e26]: 3 candidates
+    - generic [ref=e266]: val 4/20

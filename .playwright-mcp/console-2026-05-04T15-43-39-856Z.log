@@ -1,0 +1,71 @@
+[      74ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=a52c42cc:14336
+[ 2426311ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:5173/@vite/client:968
+[ 3085931ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:14336
+[ 3102444ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:14336
+[ 3104096ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:14336
+[ 3143919ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:14336
+[ 3472170ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:14336
+[ 4555140ms] [ERROR] React has detected a change in the order of Hooks called by %s. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+%s   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ App 1. useState                   useState
+2. useState                   useState
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useRef                     useRef
+7. useCallback                useRef
+ @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:4178
+[ 4555142ms] Error: Rendered more hooks than during the previous render.
+    at updateWorkInProgressHook (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:4326:12)
+    at updateCallback (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:4920:15)
+    at Object.useCallback (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:13242:12)
+    at exports.useCallback (http://localhost:5173/node_modules/.vite/deps/react-DW0Z4HR0.js?v=889b3b8a:703:31)
+    at useSession (http://localhost:5173/src/hooks/useSession.ts?t=1777913974969:28:15)
+    at App (http://localhost:5173/src/App.tsx?t=1777913974969:13:79)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:12867:12)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:4212:19)
+    at updateFunctionComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:5568:16)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:6139:20)
+[ 4555142ms] [WARNING] %s
+
+%s
+ An error occurred in the <App> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:5256
+[ 4601971ms] TypeError: Cannot read properties of undefined (reading 'parent')
+    at App (http://localhost:5173/src/App.tsx?t=1777913974969:57:24)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:12867:12)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:4212:19)
+    at updateFunctionComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:5568:16)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:6139:20)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:850:66)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:8428:92)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:8324:37)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:8308:6)
+    at performWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:7993:27)
+[ 4601971ms] [WARNING] %s
+
+%s
+ An error occurred in the <App> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:5256
+[ 4655762ms] TypeError: Cannot read properties of undefined (reading 'parent')
+    at App (http://localhost:5173/src/App.tsx?t=1777913974969:57:24)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:12867:12)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:4212:19)
+    at updateFunctionComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:5568:16)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:6139:20)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:850:66)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:8428:92)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:8324:37)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:8308:6)
+    at performWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:7993:27)
+[ 4655762ms] [WARNING] %s
+
+%s
+ An error occurred in the <App> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:5256
+[ 4859026ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:14336
+[ 4860456ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:14336
+[ 5215047ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=76313cd1:14336

@@ -1,0 +1,23 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Gen 0
+      - generic [ref=e8]: ✓Evaluate
+      - generic [ref=e11]: Reflect
+      - generic [ref=e14]: Score Children
+      - generic [ref=e17]: Select
+  - main [ref=e18]:
+    - img [ref=e27]:
+      - generic [ref=e28] [cursor=pointer]:
+        - generic: seed
+        - generic: fb 67% val 50%
+  - complementary [ref=e20]:
+    - generic [ref=e159]:
+      - generic [ref=e161]: Reflection
+      - generic [ref=e164]:
+        - generic [ref=e165]: seed
+        - generic [ref=e166]: streaming reflection…
+  - contentinfo [ref=e23]:
+    - button "Restart" [disabled] [ref=e32]
+    - button "Running…" [disabled] [ref=e168]
+    - generic [ref=e26]: working…

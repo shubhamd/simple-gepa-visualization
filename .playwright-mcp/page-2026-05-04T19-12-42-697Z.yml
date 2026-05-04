@@ -1,0 +1,44 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Gen 0
+      - generic [ref=e8]: Evaluate
+      - generic [ref=e11]: Reflect
+      - generic [ref=e14]: Score Children
+      - generic [ref=e17]: Select
+  - main [ref=e18]:
+    - img [ref=e27]:
+      - generic [ref=e28] [cursor=pointer]:
+        - generic: seed
+        - generic: evaluating…
+  - complementary [ref=e20]:
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]: Eval output
+        - generic [ref=e37]: 1 done, 1 running
+        - generic [ref=e38]: 🔍 fb = training ✦ val = held-out
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: seed
+            - generic [ref=e43]: task 1/5
+            - generic [ref=e44]: 🔍 fb
+          - generic [ref=e45]:
+            - generic [ref=e46]: What is 7 * 6?
+            - generic [ref=e47]: "ANSWER: 42"
+          - generic [ref=e48]:
+            - generic [ref=e49]: ✓ correct
+            - generic [ref=e50]: ✓ fmt
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - generic [ref=e53]: seed
+            - generic [ref=e54]: task 2/5
+            - generic [ref=e55]: 🔍 fb
+            - generic [ref=e56]: streaming…
+          - generic [ref=e57]:
+            - generic [ref=e58]: What is 10 / 2 * 3 - 9?
+            - text: I'm sorry for any confusion, but it seems like you've provided a math expression that includes both division and multiplication in the same▌
+  - contentinfo [ref=e23]:
+    - button "Restart" [disabled] [ref=e32]
+    - button "Running…" [disabled] [ref=e59]
+    - generic [ref=e26]: working…

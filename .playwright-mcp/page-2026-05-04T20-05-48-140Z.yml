@@ -1,0 +1,68 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Gen 0
+      - generic [ref=e8]: ✓Evaluate
+      - generic [ref=e11]: ✓Reflect
+      - generic [ref=e14]: Score Children
+      - generic [ref=e17]: Select
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - img [ref=e27]:
+        - generic [ref=e28] [cursor=pointer]:
+          - generic: seed
+          - generic:
+            - generic: acc@fb 100%
+            - generic: acc@val 50%
+        - generic [ref=e193] [cursor=pointer]:
+          - generic: g0.c1
+          - generic: pending
+        - generic [ref=e197] [cursor=pointer]:
+          - generic: g0.c2
+          - generic: pending
+      - generic:
+        - generic:
+          - generic: seed
+        - generic:
+          - generic:
+            - generic: acc@fb
+            - generic: 100%
+          - generic:
+            - generic: fmt@fb
+            - generic: 100%
+          - generic:
+            - generic: acc@val
+            - generic: 50%
+          - generic:
+            - generic: fmt@val
+            - generic: 100%
+        - generic: "You are a helpful math assistant. Solve the following problem step by step. Finally, output the result on its own line as: ANSWER: <integer>"
+  - complementary [ref=e20]:
+    - generic [ref=e201]:
+      - generic [ref=e203]:
+        - generic [ref=e204]:
+          - generic [ref=e205]: Eval output
+          - generic [ref=e206]: 🔍 fb = training ✦ val = held-out
+        - generic [ref=e208]: Evaluation output appears here task by task.
+      - generic [ref=e210]:
+        - generic [ref=e211]:
+          - generic [ref=e212]: Reasoning Trace
+          - generic [ref=e213]: 2 variants proposed
+        - generic [ref=e215]:
+          - generic [ref=e216]:
+            - generic [ref=e217]: seed
+            - generic [ref=e218]: acc@fb 100% · fmt@fb 100% · acc@val 50% · fmt@val 100% · tok 125
+          - generic [ref=e219]: LLM critique
+          - generic [ref=e221]: "The current prompt is highly effective with perfect accuracy and formatting. However, there is room to optimize for efficiency and prevent potential 'chatter' or unnecessary verbosity that could increase token costs. The improvement strategy focuses on two paths: one that enforces a strictly structured Chain-of-Thought (CoT) to ensure logical rigor while maintaining brevity, and another that utilizes a 'direct-to-solution' approach to minimize token usage for simpler problems while still maintaining the required output format."
+          - generic [ref=e222]:
+            - generic [ref=e223]: Proposed prompts (2)
+            - generic [ref=e224]:
+              - generic [ref=e225]: → g0_seed_child1
+              - generic [ref=e226]: "You are a precise mathematical reasoning engine. Solve the provided problem using a concise, step-by-step logical derivation. Ensure every calculation is verified before concluding. Output the final result on its own line in the following format: ANSWER: <integer>"
+            - generic [ref=e227]:
+              - generic [ref=e228]: → g0_seed_child2
+              - generic [ref=e229]: "Solve the mathematical problem following these constraints: 1. Perform step-by-step reasoning. 2. Be as brief as possible while maintaining accuracy. 3. Conclude strictly with the final integer result. ANSWER: <integer>"
+  - contentinfo [ref=e23]:
+    - button "Restart" [ref=e32] [cursor=pointer]
+    - 'button "Step: evaluating children" [ref=e230] [cursor=pointer]'
+    - generic [ref=e26]: 3 candidates

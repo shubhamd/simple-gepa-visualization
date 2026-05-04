@@ -1,0 +1,57 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Gen 0
+      - generic [ref=e8]: ✓Evaluate
+      - generic [ref=e11]: ✓Reflect
+      - generic [ref=e14]: Score Children
+      - generic [ref=e17]: Select
+  - main [ref=e18]:
+    - img [ref=e27]:
+      - generic [ref=e28] [cursor=pointer]:
+        - generic: seed
+        - generic: fb 67% val 50%
+      - generic [ref=e171] [cursor=pointer]:
+        - generic: c1
+        - generic: evaluating…
+      - generic [ref=e175] [cursor=pointer]:
+        - generic: c2
+        - generic: evaluating…
+  - complementary [ref=e20]:
+    - generic [ref=e179]:
+      - generic [ref=e181]:
+        - generic [ref=e182]:
+          - generic [ref=e183]: Eval output
+          - generic [ref=e209]: 0 done, 1 running
+          - generic [ref=e184]: 🔍 fb = training ✦ val = held-out
+        - generic [ref=e210]:
+          - generic [ref=e211]:
+            - generic [ref=e212]: seed_child1
+            - generic [ref=e213]: task 1/5
+            - generic [ref=e214]: 🔍 fb
+            - generic [ref=e215]: streaming…
+          - generic [ref=e216]:
+            - generic [ref=e217]: What is 7 * 6?
+            - text: "The correct answer is calculated as follows: 1. Multiply 7 and 6 together. 2. The result of this▌"
+      - generic [ref=e188]:
+        - generic [ref=e189]:
+          - generic [ref=e190]: Reasoning Trace
+          - generic [ref=e191]: 2 variants proposed
+        - generic [ref=e193]:
+          - generic [ref=e194]:
+            - generic [ref=e195]: seed
+            - generic [ref=e196]: fb 67% · fmt 67% · tok 100
+          - generic [ref=e197]: LLM critique
+          - generic [ref=e199]: The current prompt is too permissive, allowing the model to adopt a conversational, apologetic, or evasive persona rather than a task-oriented one. The failed task shows the model hallucinating 'confusion' and failing to complete the calculation, likely due to a lack of instruction regarding strict adherence to mathematical order of operations (PEMDAS) and a lack of 'Chain of Thought' enforcement to ensure the calculation is completed before the final answer. The low format rate suggests the model often drifts into conversational filler, preventing it from reaching the required output suffix.
+          - generic [ref=e200]:
+            - generic [ref=e201]: Proposed prompts (2)
+            - generic [ref=e202]:
+              - generic [ref=e203]: → seed_child1
+              - generic [ref=e204]: "You are a precise mathematical reasoning engine. For every problem provided, follow these steps: 1. Identify the order of operations (PEMDAS/BODMAS). 2. Execute each step of the calculation sequentially and clearly. 3. Verify the final result against the intermediate steps. Do not provide conversational filler, apologies, or meta-commentary about the difficulty of the problem. Proceed directly to the calculation. ANSWER: <integer>"
+            - generic [ref=e205]:
+              - generic [ref=e206]: → seed_child2
+              - generic [ref=e207]: "Solve the provided mathematical expression using strict order of operations. Break the problem into logical steps: Parentheses, Exponents, Multiplication and Division (left to right), and Addition and Subtraction (left to right). You must provide a complete step-by-step derivation and conclude with the final numerical value. Do not deviate from the calculation or engage in conversational dialogue. ANSWER: <integer>"
+  - contentinfo [ref=e23]:
+    - button "Restart" [disabled] [ref=e32]
+    - button "Running…" [disabled] [ref=e218]
+    - generic [ref=e26]: working…

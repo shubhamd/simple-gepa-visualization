@@ -1,0 +1,32 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Gen 1
+      - generic [ref=e8]: ✓Evaluate
+      - generic [ref=e11]: Reflect
+      - generic [ref=e14]: Score Children
+      - generic [ref=e17]: Select
+  - main [ref=e18]:
+    - img [ref=e27]:
+      - generic [ref=e28] [cursor=pointer]:
+        - generic: seed
+        - generic: fb 100% val 0%
+      - generic [ref=e171] [cursor=pointer]:
+        - generic: c1
+        - generic: fb 100% val 0%
+      - generic [ref=e175] [cursor=pointer]:
+        - generic: c2
+        - generic: fb 100% val 0%
+  - complementary [ref=e20]:
+    - generic [ref=e637]:
+      - generic [ref=e639]: Reflection
+      - generic [ref=e641]:
+        - generic [ref=e642]:
+          - generic [ref=e643]: seed
+          - generic [ref=e644]: streaming reflection…
+        - generic [ref=e645]: "{ \"analysis\": \"The current prompt is functional and yields perfect accuracy and format adherence. However, the 'avg_tokens' suggest the model might be providing more conversational or discursive reasoning than necessary for a pure math task. To optimize for efficiency and minimize latency/cost, the improved prompts will enforce▌"
+  - contentinfo [ref=e23]:
+    - button "Restart" [disabled] [ref=e32]
+    - button "Running…" [disabled] [ref=e646]
+    - generic [ref=e26]: working…
+    - generic [ref=e266]: val 4/20

@@ -1,0 +1,32 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Gen 0
+      - generic [ref=e8]: Evaluate
+      - generic [ref=e11]: Reflect
+      - generic [ref=e14]: Score Children
+      - generic [ref=e17]: Select
+  - main [ref=e18]:
+    - img [ref=e27]:
+      - generic [ref=e28] [cursor=pointer]:
+        - generic: seed
+        - generic: evaluating…
+  - complementary [ref=e20]:
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]: Eval output
+        - generic [ref=e37]: 0 done, 1 running
+        - generic [ref=e38]: 🔍 fb = training ✦ val = held-out
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42]: seed
+          - generic [ref=e43]: task 1/5
+          - generic [ref=e44]: 🔍 fb
+          - generic [ref=e45]: streaming…
+        - generic [ref=e46]:
+          - generic [ref=e47]: What is 7 * 6?
+          - text: "To solve this problem, we simply multiply 7 by 6 using basic arithmetic operations. The calculation is as follows: \\[ 7 \\▌"
+  - contentinfo [ref=e23]:
+    - button "Restart" [disabled] [ref=e32]
+    - button "Running…" [disabled] [ref=e48]
+    - generic [ref=e26]: working…
