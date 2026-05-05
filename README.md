@@ -29,14 +29,7 @@ Two LLMs work together: a local **task model** solves math problems under a cand
 
 ## Setup
 
-### 1. Clone
-
-```bash
-git clone git@github-personal:shubhamd/simple-gepa-visualization.git
-cd simple-gepa-visualization
-```
-
-### 2. Backend
+### 1. Backend
 
 ```bash
 cd gepa_math_demo
