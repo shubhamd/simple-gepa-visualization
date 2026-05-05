@@ -128,46 +128,6 @@ Each `Step` call runs exactly one phase, so you can pause and inspect the tree b
 
 ---
 
-## Architecture
-
-### Backend (`gepa_math_demo/`)
-
-| File | Role |
-|------|------|
-| `api.py` | FastAPI app; `/session/start`, `/session/state`, `/session/step` (SSE). |
-| `session.py` | `GEPASession` — owns all mutable state; four `step_*` methods, one per phase. Each streams fine-grained SSE events including the raw task LLM response per task. |
-| `gepa_math_demo.py` | Task dataset (`TASKS`), `Candidate` / `EvalResult` dataclasses, `parse_answer_line`, Pareto-front logic, standalone `__main__` runner. |
-| `llm_client.py` | `call_local_llm` → LM Studio; `call_openrouter_llm` → OpenRouter. |
-
-### Frontend (`gepa-sim/src/`)
-
-| File | Role |
-|------|------|
-| `hooks/useSession.ts` | All API calls and SSE subscription; exposes `state`, `running`, `evalEntries`, `reflectGroups`, `start`, `step`. |
-| `components/EvolutionTree.tsx` | SVG/DOM tree of all candidates. |
-| `components/EvalLog.tsx` | Live eval log with streamed task LLM answers. |
-| `components/ReflectionLog.tsx` | Streaming reflection LLM output, grouped by candidate. |
-| `components/PromptDiff.tsx` | Character-level diff between parent and child prompts. |
-| `components/PhaseBar.tsx` | Top bar showing current phase and generation. |
-| `components/PhaseInfo.tsx` | Summary stats (candidates, front size, budget). |
-
-### SSE event reference
-
-The `/session/step` endpoint streams these events:
-
-| Event | Key fields |
-|-------|-----------|
-| `eval_start` | `candidate_id` |
-| `task_start` | `candidate_id`, `task_index`, `question` |
-| `task_done` | `candidate_id`, `task_index`, `response` (full LLM output), `parsed_value`, `correct`, `formatted` |
-| `candidate_scored` | `candidate_id`, `metrics` (`accuracy`, `format_rate`, `avg_tokens`) |
-| `reflect_start` | `candidate_id` |
-| `child_created` | `child` (`id`, `prompt`, `parent_id`) |
-| `generation_done` | `generation`, `front_ids` |
-| `phase_done` | full session state snapshot |
-
----
-
 ## Customising
 
 **Change the math tasks** — edit `TASKS` in `gepa_math_demo.py`.
