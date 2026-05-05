@@ -52,7 +52,7 @@ function metricsLabel(c: Candidate, running: boolean): string {
   if (!c.metrics) return running ? 'evaluating…' : 'pending'
   const fb  = (c.metrics.feedback_accuracy * 100).toFixed(0)
   const val = (c.metrics.accuracy * 100).toFixed(0)
-  return `acc@fb ${fb}%  acc@val ${val}%`
+  return `acc@train ${fb}%  acc@val ${val}%`
 }
 
 function shortLabel(id: string): string {
@@ -102,8 +102,8 @@ function Tooltip({ ts, color }: { ts: TooltipState; color: string }) {
       {/* Metric bars */}
       {c.metrics ? (
         <div style={{ marginBottom: 10 }}>
-          <MiniBar label="acc@fb"  value={c.metrics.feedback_accuracy}    color="#a78bfa" />
-          <MiniBar label="fmt@fb"  value={c.metrics.feedback_format_rate} color="#c4b5fd" />
+          <MiniBar label="acc@train"  value={c.metrics.feedback_accuracy}    color="#a78bfa" />
+          <MiniBar label="fmt@train"  value={c.metrics.feedback_format_rate} color="#c4b5fd" />
           <MiniBar label="acc@val" value={c.metrics.accuracy}             color="#38bdf8" />
           <MiniBar label="fmt@val" value={c.metrics.val_format_rate}      color="#7dd3fc" />
         </div>
@@ -219,6 +219,20 @@ export default function EvolutionTree({ candidates, frontIds, running }: {
               {/* Knockout circle — solid bg fill so edges don't bleed through */}
               <circle cx={pos.x} cy={pos.y} r={NODE_R} fill="var(--clr-bg)" />
               <circle cx={pos.x} cy={pos.y} r={NODE_R} fill={color} opacity={isEval ? 0.45 : 1} />
+
+              {/* Pareto front glow dot */}
+              {frontIds.has(c.id) && (
+                <>
+                  <circle cx={pos.x + 19} cy={pos.y - 19} r={7}
+                    fill="#ef4444" opacity={0.25}>
+                    <animate attributeName="r"       values="7;11;7"      dur="2s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" values="0.25;0;0.25"  dur="2s" repeatCount="indefinite" />
+                  </circle>
+                  <circle cx={pos.x + 19} cy={pos.y - 19} r={4} fill="#ef4444">
+                    <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite" />
+                  </circle>
+                </>
+              )}
               <text x={pos.x} y={pos.y} textAnchor="middle" dominantBaseline="middle"
                 fontSize={9} fontWeight={700} fill="var(--clr-bg)"
                 style={{ userSelect: 'none', pointerEvents: 'none' }}>
@@ -235,7 +249,7 @@ export default function EvolutionTree({ candidates, frontIds, running }: {
                   <text textAnchor="middle" fontSize={8} fontWeight={400} fill="var(--clr-muted)"
                     style={{ userSelect: 'none', pointerEvents: 'none' }}>
                     <tspan x={pos.x} y={pos.y + NODE_R + 20}>
-                      acc@fb {(c.metrics.feedback_accuracy * 100).toFixed(0)}%
+                      acc@train {(c.metrics.feedback_accuracy * 100).toFixed(0)}%
                     </tspan>
                     <tspan x={pos.x} dy={10}>
                       acc@val {(c.metrics.accuracy * 100).toFixed(0)}%

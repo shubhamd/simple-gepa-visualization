@@ -36,10 +36,11 @@ html, body, #root {
 
 .app {
   display: grid;
-  grid-template-rows: 56px 1fr 52px;
+  grid-template-rows: 56px 34px 1fr 52px;
   grid-template-columns: 1fr 480px;   /* overridden by inline style from App.tsx */
   grid-template-areas:
     "phase   phase"
+    "info    info"
     "tree    diff"
     "control control";
   height: 100%;
@@ -48,6 +49,7 @@ html, body, #root {
 }
 
 .area-phase   { grid-area: phase;   background: var(--clr-surface); display: flex; align-items: center; padding: 0 24px; }
+.area-info    { grid-area: info;    background: var(--clr-bg);      overflow: hidden; }
 .area-tree    { grid-area: tree;    background: var(--clr-bg);      overflow: auto; }
 .area-diff    { grid-area: diff;    background: var(--clr-surface); overflow: auto; }
 .area-control { grid-area: control; background: var(--clr-surface); display: flex; align-items: center; padding: 0 24px; gap: 12px; }

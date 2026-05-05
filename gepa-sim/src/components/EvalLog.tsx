@@ -10,7 +10,7 @@ function SplitBadge({ split }: { split: 'feedback' | 'pareto' }) {
       background: isFb ? 'rgba(167,139,250,0.12)' : 'rgba(56,189,248,0.12)',
       padding: '2px 6px', borderRadius: 10,
     }}>
-      {isFb ? '🔍 fb' : '✦ val'}
+      {isFb ? '🔍 train' : '✦ val'}
     </span>
   )
 }
@@ -177,7 +177,7 @@ export default function EvalLog({ entries, currentTask, taskCount, streamingText
           </span>
         )}
         <span style={{ marginLeft: 'auto', fontSize: 10, color: 'var(--clr-muted)' }}>
-          <span style={{ color: '#a78bfa' }}>🔍 fb</span> = training &nbsp;
+          <span style={{ color: '#a78bfa' }}>🔍 train</span> = training &nbsp;
           <span style={{ color: '#38bdf8' }}>✦ val</span> = held-out
         </span>
       </div>

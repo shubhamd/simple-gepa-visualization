@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Node
+gepa-sim/node_modules/
+gepa-sim/dist/
+
+# Playwright MCP artifacts
+.playwright-mcp/
+
+# Screenshots / debug images
+*.png
+*.jpg
+*.jpeg
+
+# Env
+.env

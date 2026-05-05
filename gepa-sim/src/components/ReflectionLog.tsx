@@ -35,7 +35,7 @@ function GroupCard({ group }: { group: ReflectGroup }) {
         </span>
         {m && (
           <span style={{ fontSize: 10, color: 'var(--clr-muted)' }}>
-            acc@fb {(m.feedback_accuracy * 100).toFixed(0)}% · fmt@fb {(m.feedback_format_rate * 100).toFixed(0)}% · acc@val {(m.accuracy * 100).toFixed(0)}% · fmt@val {(m.val_format_rate * 100).toFixed(0)}% · tok {m.avg_tokens.toFixed(0)}
+            acc@train {(m.feedback_accuracy * 100).toFixed(0)}% · fmt@train {(m.feedback_format_rate * 100).toFixed(0)}% · acc@val {(m.accuracy * 100).toFixed(0)}% · fmt@val {(m.val_format_rate * 100).toFixed(0)}% · tok {m.avg_tokens.toFixed(0)}
           </span>
         )}
       </div>

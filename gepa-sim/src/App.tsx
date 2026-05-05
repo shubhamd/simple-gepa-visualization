@@ -1,6 +1,7 @@
 import { useRef, useState, useCallback } from 'react'
 import './styles.css'
 import PhaseBar from './components/PhaseBar'
+import PhaseInfo from './components/PhaseInfo'
 import EvolutionTree from './components/EvolutionTree'
 import PromptDiff from './components/PromptDiff'
 import EvalLog from './components/EvalLog'
@@ -109,6 +110,10 @@ export default function App() {
       <header className="area-phase">
         <PhaseBar phase={state.phase} generation={state.generation} />
       </header>
+
+      <div className="area-info">
+        <PhaseInfo state={state} running={running} />
+      </div>
 
       <main className="area-tree">
         <EvolutionTree candidates={state.candidates} frontIds={frontIds} running={running} />
